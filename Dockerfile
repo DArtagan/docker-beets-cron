@@ -5,4 +5,4 @@ COPY root /var/spool/cron/crontabs/root
 
 ENTRYPOINT []
 
-CMD crond -1 2 -f
+CMD crond -l 2 -f

@@ -1,1 +1,1 @@
-0 4 * * * beets import -q /working
+0 4 * * * beet import -q /working

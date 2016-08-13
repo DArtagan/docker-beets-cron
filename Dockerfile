@@ -1,8 +1,11 @@
 FROM gbrks/beets
 MAINTAINER William Weiskopf <william@weiskopf.me>
 
-COPY root /var/spool/cron/crontabs/root
+COPY crontab /var/spool/cron/crontabs/beets
+
+USER root
 
 ENTRYPOINT []
 
-CMD crond -l 2 -f
+CMD crond -l 0 -f
+

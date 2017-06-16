@@ -1,7 +1,8 @@
 FROM gbrks/beets
 MAINTAINER William Weiskopf <william@weiskopf.me>
 
-COPY crontab /var/spool/cron/crontabs/beets
+COPY crontab /crontab.temp
+RUN /usr/bin/crontab /crontab.temp
 
 USER root
 
